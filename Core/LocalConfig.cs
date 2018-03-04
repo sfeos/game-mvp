@@ -10,12 +10,12 @@ namespace Sfeos.Game.Core
 		/// we will set up a unique username/password for you to use in your local test environment. Use the following
 		/// git command to make sure you do not upload your personal connectionstring to the repository.
 		/// 
-		/// git update-index --assume-unchanged Core/Models/LocalConfig.cs
+		/// git update-index --assume-unchanged Core\LocalConfig.cs
 		/// 
 		/// If you do need to upload the connectionstring (you shouldn't need to) you can use the following command
 		/// to have git recognize the changes again.
 		/// 
-		/// git update-index --no-assume-unchanged Core/Models/LocalConfig.cs
+		/// git update-index --no-assume-unchanged Core\LocalConfig.cs
 		public static string ConnectionString =
 			"ReplaceConnectionString";
 	}
