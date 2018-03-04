@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Sfeos.Data.Models;
+using Sfeos.Game.Core.Models;
 
-namespace Sfeos.Data
+namespace Sfeos.Game.Core
 {
 	public class SfeosContext : DbContext
     {

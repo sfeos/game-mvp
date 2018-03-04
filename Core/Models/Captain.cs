@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Sfeos.Game.Models
+namespace Sfeos.Game.Core.Models
 {
 	public class Captain
     {
