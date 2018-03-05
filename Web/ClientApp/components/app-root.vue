@@ -1,17 +1,20 @@
 <template>
-    <div id="app" class="container-fluid">
-        <div class="row">
-            <div class="col-sm-3">
+
+    <div id="app">
+        <div id="main-layout">
+            <div id="navigation">
                 <nav-menu params="route: route"></nav-menu>
             </div>
-            <div class="col-sm-9">
+            <div id="content">
                 <router-view></router-view>
             </div>
         </div>
-
     </div>
 
 </template>
+
+
+
 
 <script>
 import Vue from 'vue'
@@ -33,5 +36,33 @@ export default {
 }
 </script>
 
+
+
+
 <style>
+    #main-layout {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: 'nav' 'content'
+    }
+
+    @media only screen and (min-width: 64em) {
+        #main-layout {
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+            grid-template-rows: 1fr auto;
+            grid-template-areas: 'nav content' 'nav content';
+        }
+    }
+
+    #navigation {
+        grid-area: nav;
+        border: solid 1px blue;
+    }
+
+    #content {
+        grid-area: content;
+        border: solid 1px red;
+    }
 </style>

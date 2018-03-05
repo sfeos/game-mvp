@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "668d0098d7523d7aa051"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "7770b618e16ae453d618"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -11893,7 +11893,7 @@ return Vue$3;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(243), __webpack_require__(244).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(242), __webpack_require__(243).setImmediate))
 
 /***/ }),
 /* 9 */
@@ -12228,7 +12228,7 @@ module.exports = function (it) {
 /* 25 */
 /***/ (function(module, exports) {
 
-module.exports = vendor_043e0e68a217a6747ce2;
+module.exports = vendor_21b077c27b8241a21f31;
 
 /***/ }),
 /* 26 */
@@ -13004,7 +13004,7 @@ exports = module.exports = __webpack_require__(14)();
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"home-page.vue","sourceRoot":""}]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"home-page.vue","sourceRoot":""}]);
 
 // exports
 
@@ -13018,7 +13018,7 @@ exports = module.exports = __webpack_require__(14)();
 
 
 // module
-exports.push([module.i, "\n.slide-enter-active, .slide-leave-active {\n  transition: max-height .35s\n}\n.slide-enter, .slide-leave-to {\n  max-height: 0px;\n}\n.slide-enter-to, .slide-leave {\n  max-height: 20em;\n}\n", "", {"version":3,"sources":["C:/Repositories/core-vue-sfeos/Web/ClientApp/components/nav-menu.vue?6555f301"],"names":[],"mappings":";AAgDA;EACA,2BAAA;CACA;AACA;EACA,gBAAA;CACA;AAEA;EACA,iBAAA;CACA","file":"nav-menu.vue","sourcesContent":["<template>\n    <div class=\"main-nav\">\n        <div class=\"navbar navbar-inverse\">\n            <div class=\"navbar-header\">\n                <button type=\"button\" class=\"navbar-toggle\" v-on:click=\"toggleCollapsed\">\n                        <span class=\"sr-only\">Toggle navigation</span>\n                        <span class=\"icon-bar\"></span>\n                        <span class=\"icon-bar\"></span>\n                        <span class=\"icon-bar\"></span>\n                    </button>\n                <a class=\"navbar-brand\" href=\"/\">ASP.NET Core with Vue.js 2</a>\n            </div>\n            <div class=\"clearfix\"></div>\n            <transition name=\"slide\">\n                <div class=\"navbar-collapse collapse in\" v-show=\"!collapsed\">\n                    <ul class=\"nav navbar-nav\">\n                        <li v-for=\"route in routes\" v-bind:key=\"route.path\">\n                            <!-- TODO: highlight active link -->\n                            <router-link :to=\"route.path\">\n                                <span :class=\"route.style\"></span> {{ route.display }}\n                            </router-link>\n                        </li>\n                    </ul>\n                </div>\n            </transition>\n        </div>\n    </div>\n</template>\n\n<script>\nimport { routes } from '../routes'\n\nexport default {\n    data() {\n        return {\n            routes,\n            collapsed : true\n        }\n    },\n    methods: {\n        toggleCollapsed: function(event){\n            this.collapsed = !this.collapsed;\n        }\n    }\n}\n</script>\n\n<style>\n.slide-enter-active, .slide-leave-active {\n  transition: max-height .35s\n}\n.slide-enter, .slide-leave-to {\n  max-height: 0px;\n}\n\n.slide-enter-to, .slide-leave {\n  max-height: 20em;\n}\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n.slide-enter-active,\n.slide-leave-active {\n  transition: max-height 0.35s;\n}\n.slide-enter,\n.slide-leave-to {\n  max-height: 0px;\n}\n.slide-enter-to,\n.slide-leave {\n  max-height: 20em;\n}\n", "", {"version":3,"sources":["C:/Repositories/core-vue-sfeos/Web/ClientApp/components/nav-menu.vue?fccdff16"],"names":[],"mappings":";AAmDA;;EAEA,6BAAA;CACA;AACA;;EAEA,gBAAA;CACA;AAEA;;EAEA,iBAAA;CACA","file":"nav-menu.vue","sourcesContent":["<template>\n\n    <div >\n        <div>\n            <button type=\"button\" v-on:click=\"toggleCollapsed\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a href=\"/\">ASP.NET Core with Vue.js 2</a>\n        </div>\n        <div v-show=\"!collapsed\">\n            <ul >\n                <li v-for=\"route in routes\" v-bind:key=\"route.path\">\n                    <!-- TODO: highlight active link -->\n                    <router-link :to=\"route.path\">\n                        <span :class=\"route.style\"></span> {{ route.display }}\n                    </router-link>\n                </li>\n            </ul>\n        </div>\n    </div>\n\n</template>\n\n\n\n\n<script>\nimport { routes } from \"../routes\";\n\nexport default {\n  data() {\n    return {\n      routes,\n      collapsed: true\n    };\n  },\n  methods: {\n    toggleCollapsed: function(event) {\n      this.collapsed = !this.collapsed;\n    }\n  }\n};\n</script>\n\n\n\n\n<style>\n.slide-enter-active,\n.slide-leave-active {\n  transition: max-height 0.35s;\n}\n.slide-enter,\n.slide-leave-to {\n  max-height: 0px;\n}\n\n.slide-enter-to,\n.slide-leave {\n  max-height: 20em;\n}\n</style>"],"sourceRoot":""}]);
 
 // exports
 
@@ -13046,7 +13046,7 @@ exports = module.exports = __webpack_require__(14)();
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"app-root.vue","sourceRoot":""}]);
+exports.push([module.i, "\n#main-layout {\n    display: grid;\n    grid-template-columns: auto;\n    grid-template-rows: 1fr auto;\n    grid-template-areas: 'nav' 'content'\n}\n@media only screen and (min-width: 64em) {\n#main-layout {\n        display: grid;\n        grid-template-columns: 3fr 9fr;\n        grid-template-rows: 1fr auto;\n        grid-template-areas: 'nav content' 'nav content';\n}\n}\n#navigation {\n    grid-area: nav;\n    border: solid 1px blue;\n}\n#content {\n    grid-area: content;\n    border: solid 1px red;\n}\n", "", {"version":3,"sources":["C:/Repositories/core-vue-sfeos/Web/ClientApp/components/app-root.vue?12b11ef8"],"names":[],"mappings":";AA0CA;IACA,cAAA;IACA,4BAAA;IACA,6BAAA;IACA,oCAAA;CACA;AAEA;AACA;QACA,cAAA;QACA,+BAAA;QACA,6BAAA;QACA,iDAAA;CACA;CACA;AAEA;IACA,eAAA;IACA,uBAAA;CACA;AAEA;IACA,mBAAA;IACA,sBAAA;CACA","file":"app-root.vue","sourcesContent":["<template>\n\n    <div id=\"app\">\n        <div id=\"main-layout\">\n            <div id=\"navigation\">\n                <nav-menu params=\"route: route\"></nav-menu>\n            </div>\n            <div id=\"content\">\n                <router-view></router-view>\n            </div>\n        </div>\n    </div>\n\n</template>\n\n\n\n\n<script>\nimport Vue from 'vue'\nimport CounterExample from './counter-example'\nimport FetchData from './fetch-data'\nimport HomePage from './home-page'\nimport NavMenu from './nav-menu'\n\nVue.component('counter-example', CounterExample);\nVue.component('fetch-data', FetchData);\nVue.component('home-page', HomePage);\nVue.component('nav-menu', NavMenu);\n\nexport default {\n    data() {\n        return {\n        }\n    }\n}\n</script>\n\n\n\n\n<style>\n    #main-layout {\n        display: grid;\n        grid-template-columns: auto;\n        grid-template-rows: 1fr auto;\n        grid-template-areas: 'nav' 'content'\n    }\n\n    @media only screen and (min-width: 64em) {\n        #main-layout {\n            display: grid;\n            grid-template-columns: 3fr 9fr;\n            grid-template-rows: 1fr auto;\n            grid-template-areas: 'nav content' 'nav content';\n        }\n    }\n\n    #navigation {\n        grid-area: nav;\n        border: solid 1px blue;\n    }\n\n    #content {\n        grid-area: content;\n        border: solid 1px red;\n    }\n</style>"],"sourceRoot":""}]);
 
 // exports
 
@@ -13091,7 +13091,7 @@ var _homePage2 = _interopRequireDefault(_homePage);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var routes = exports.routes = [{ path: '/', component: _homePage2.default, display: 'Home', style: 'glyphicon glyphicon-home' }, { path: '/counter', component: _counterExample2.default, display: 'Counter', style: 'glyphicon glyphicon-education' }, { path: '/fetch-data', component: _fetchData2.default, display: 'Fetch data', style: 'glyphicon glyphicon-th-list' }];
+var routes = exports.routes = [{ path: '/', component: _homePage2.default, display: 'Home', style: 'glyphicon glyphicon-home' }, { path: '/counter', component: _counterExample2.default, display: 'Counter', style: 'glyphicon glyphicon-education' }, { path: '/fetch-data', component: _fetchData2.default, display: 'Fetch Data', style: 'glyphicon glyphicon-th-list' }];
 
 /***/ }),
 /* 69 */
@@ -14522,7 +14522,7 @@ module.exports = Component.exports
 /* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(25))(16);
+module.exports = (__webpack_require__(25))(14);
 
 /***/ }),
 /* 110 */
@@ -14832,7 +14832,7 @@ if (module) {
 /* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(25))(12);
+module.exports = (__webpack_require__(25))(10);
 
 /***/ }),
 /* 113 */
@@ -15048,7 +15048,7 @@ var _vue = __webpack_require__(8);
 
 var _vue2 = _interopRequireDefault(_vue);
 
-var _axios = __webpack_require__(241);
+var _axios = __webpack_require__(244);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -15096,7 +15096,7 @@ var _vue = __webpack_require__(8);
 
 var _vue2 = _interopRequireDefault(_vue);
 
-var _vueRouter = __webpack_require__(242);
+var _vueRouter = __webpack_require__(241);
 
 var _vueRouter2 = _interopRequireDefault(_vueRouter);
 
@@ -15357,24 +15357,24 @@ exports.default = {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _routes = __webpack_require__(68);
 
 exports.default = {
-    data: function data() {
-        return {
-            routes: _routes.routes,
-            collapsed: true
-        };
-    },
+  data: function data() {
+    return {
+      routes: _routes.routes,
+      collapsed: true
+    };
+  },
 
-    methods: {
-        toggleCollapsed: function toggleCollapsed(event) {
-            this.collapsed = !this.collapsed;
-        }
+  methods: {
+    toggleCollapsed: function toggleCollapsed(event) {
+      this.collapsed = !this.collapsed;
     }
+  }
 };
 
 /***/ }),
@@ -19233,10 +19233,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Webpack")]), _vm._v(" for building and bundling client-side resources")]), _vm._v(" "), _c('li', [_c('a', {
     attrs: {
-      "href": "http://getbootstrap.com/"
-    }
-  }, [_vm._v("Bootstrap")]), _vm._v(" for layout and styling")]), _vm._v(" "), _c('li', [_c('a', {
-    attrs: {
       "href": "api/SampleData/WeatherForecasts"
     }
   }, [_vm._v("API sample data")]), _vm._v(" from the dotnet controller")])]), _vm._v(" "), _c('p', [_vm._v("To help you get started, we've also set up:")]), _vm._v(" "), _c('ul', [_c('li', [_c('strong', [_vm._v("Client-side navigation")]), _vm._v(". For example, click "), _c('em', [_vm._v("Counter")]), _vm._v(" then "), _c('em', [_vm._v("Back")]), _vm._v(" to return\n            here.")]), _vm._v(" "), _c('li', [_c('strong', [_vm._v("Webpack dev middleware")]), _vm._v(". In development mode, there's no need to run the "), _c('code', [_vm._v("webpack")]), _vm._v("                    build tool. Your client-side resources are dynamically built on demand. Updates are available as soon\n            as you modify any file.")]), _vm._v(" "), _c('li', [_c('strong', [_vm._v("Hot module replacement")]), _vm._v(". In development mode, you don't even need to reload the page after\n            making most changes. Within seconds of saving changes to files, your Vue.js app will be rebuilt and\n            a new instance injected is into the page.")]), _vm._v(" "), _c('li', [_c('strong', [_vm._v("Code splitting and lazy loading")]), _vm._v(". Vue.js components may optionally be bundled individually and\n            loaded on demand. For example, the code and template for 'Counter' is not loaded until you navigate to\n            it..")]), _vm._v(" "), _c('li', [_c('strong', [_vm._v("Efficient production builds")]), _vm._v(". In production mode, development-time features are disabled,\n            and the "), _c('code', [_vm._v("webpack")]), _vm._v(" build tool produces minified static CSS and JavaScript files.")])]), _vm._v(" "), _c('br'), _c('br'), _vm._v(" "), _c('h2', [_vm._v("This Template brought to you by "), _c('a', {
@@ -19262,14 +19258,7 @@ if (true) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "main-nav"
-  }, [_c('div', {
-    staticClass: "navbar navbar-inverse"
-  }, [_c('div', {
-    staticClass: "navbar-header"
-  }, [_c('button', {
-    staticClass: "navbar-toggle",
+  return _c('div', [_c('div', [_c('button', {
     attrs: {
       "type": "button"
     },
@@ -19285,27 +19274,17 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }), _vm._v(" "), _c('span', {
     staticClass: "icon-bar"
   })]), _vm._v(" "), _c('a', {
-    staticClass: "navbar-brand",
     attrs: {
       "href": "/"
     }
   }, [_vm._v("ASP.NET Core with Vue.js 2")])]), _vm._v(" "), _c('div', {
-    staticClass: "clearfix"
-  }), _vm._v(" "), _c('transition', {
-    attrs: {
-      "name": "slide"
-    }
-  }, [_c('div', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (!_vm.collapsed),
       expression: "!collapsed"
-    }],
-    staticClass: "navbar-collapse collapse in"
-  }, [_c('ul', {
-    staticClass: "nav navbar-nav"
-  }, _vm._l((_vm.routes), function(route) {
+    }]
+  }, [_c('ul', _vm._l((_vm.routes), function(route) {
     return _c('li', {
       key: route.path
     }, [_c('router-link', {
@@ -19314,8 +19293,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }, [_c('span', {
       class: route.style
-    }), _vm._v(" " + _vm._s(route.display) + "\n                        ")])], 1)
-  }))])])], 1)])
+    }), _vm._v(" " + _vm._s(route.display) + "\n                ")])], 1)
+  }))])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (true) {
@@ -19333,7 +19312,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', [_c('h1', [_vm._v("Weather forecast")]), _vm._v(" "), _c('p', [_vm._v("This component demonstrates fetching data from the server.")]), _vm._v(" "), (!_vm.forecasts) ? _c('p', [_c('em', [_vm._v("Loading...")])]) : _vm._e(), _vm._v(" "), (_vm.forecasts) ? _c('table', {
     staticClass: "table"
   }, [_vm._m(0), _vm._v(" "), _c('tbody', _vm._l((_vm.forecasts), function(forecast) {
-    return _c('tr', [_c('td', [_vm._v(_vm._s(forecast.dateFormatted))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(forecast.temperatureC))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(forecast.temperatureF))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(forecast.summary))])])
+    return _c('tr', {
+      key: forecast.dateFormatted
+    }, [_c('td', [_vm._v(_vm._s(forecast.dateFormatted))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(forecast.temperatureC))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(forecast.temperatureF))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(forecast.summary))])])
   }))]) : _vm._e()])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('thead', [_c('tr', [_c('th', [_vm._v("Date")]), _vm._v(" "), _c('th', [_vm._v("Temp. (C)")]), _vm._v(" "), _c('th', [_vm._v("Temp. (F)")]), _vm._v(" "), _c('th', [_vm._v("Summary")])])])
@@ -19352,20 +19333,25 @@ if (true) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "container-fluid",
     attrs: {
       "id": "app"
     }
   }, [_c('div', {
-    staticClass: "row"
+    attrs: {
+      "id": "main-layout"
+    }
   }, [_c('div', {
-    staticClass: "col-sm-3"
+    attrs: {
+      "id": "navigation"
+    }
   }, [_c('nav-menu', {
     attrs: {
       "params": "route: route"
     }
   })], 1), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-9"
+    attrs: {
+      "id": "content"
+    }
   }, [_c('router-view')], 1)])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
@@ -19938,25 +19924,25 @@ module.exports = function(module) {
 /* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(25))(10);
+module.exports = (__webpack_require__(25))(12);
 
 /***/ }),
 /* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(25))(14);
+module.exports = (__webpack_require__(25))(2);
 
 /***/ }),
 /* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(25))(3);
+module.exports = (__webpack_require__(25))(33);
 
 /***/ }),
 /* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(25))(47);
+module.exports = (__webpack_require__(25))(9);
 
 /***/ }),
 /* 245 */
