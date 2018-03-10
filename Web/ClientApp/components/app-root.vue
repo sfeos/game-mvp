@@ -50,7 +50,7 @@ export default {
     @media only screen and (min-width: 64em) {
         #main-layout {
             display: grid;
-            grid-template-columns: 3fr 9fr;
+            grid-template-columns: 2fr 10fr;
             grid-template-rows: 1fr auto;
             grid-template-areas: 'nav content' 'nav content';
         }
@@ -58,11 +58,13 @@ export default {
 
     #navigation {
         grid-area: nav;
-        border: solid 1px blue;
+        border: dashed 1px gray;
+        padding: 0 .5rem;
     }
 
     #content {
         grid-area: content;
-        border: solid 1px red;
+        border: dashed 1px gray;
+        padding: 0 1rem;
     }
 </style>

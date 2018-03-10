@@ -1,4 +1,4 @@
-﻿<template>
+<template>
 
     <div >
         <div>
@@ -8,7 +8,6 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="/">ASP.NET Core with Vue.js 2</a>
         </div>
         <div v-show="!collapsed">
             <ul >
