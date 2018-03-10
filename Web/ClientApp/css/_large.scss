@@ -1,0 +1,138 @@
+/* Stacked Form */
+form .field-group .select {
+    width: 20%;
+}
+
+/* Inline Form */
+form.inline .field,
+form.inline label,
+form.inline input,
+form.inline .select,
+form.inline .checkbox,
+form.inline button,
+form.inline .field-group,
+form.inline .field-icons {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+form.inline .field-group input,
+form.inline .field-buttons button,
+form.inline .field-group .field-icons {
+    margin-right: 0;
+}
+
+form.inline .field-group {
+    display: inline-table;
+}
+
+form.inline .field,
+form.inline input,
+form.inline .select,
+form.inline .field-group,
+form.inline .field-icons {
+    width: 200px;
+}
+
+form.inline .field-group input,
+form.inline .field-group .select,
+form.inline .field-group .field-icons {
+    display: table-cell;
+    width: 100%;
+}
+
+form.inline .field-group .field-icons input {
+    display: inline-block;
+}
+
+form.inline .field-group .select {
+    width: 33.33%;
+}
+
+/* Navbar */
+.navbar {
+    height: 40px;
+}
+
+.navbar .dropdown {
+    display: none;
+}
+
+.nav-collapse {
+    max-height: 9999px;
+}
+
+.nav {
+    float: left;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav-right {
+    float: right !important;
+    right: 0;
+    left: auto;
+}
+
+/* Grid Layout */
+[class*='col-'] {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.col-1-8 {
+    width: 12.5%;
+}
+
+.col-2-8 {
+    width: 25%;
+}
+
+.col-3-8 {
+    width: 37.5%;
+}
+
+.col-4-8 {
+    width: 50%;
+}
+
+.col-5-8 {
+    width: 62.5%;
+}
+
+.col-6-8 {
+    width: 75%;
+}
+
+.col-7-8 {
+    width: 87.5%;
+}
+
+.col-8-8 {
+    width: 100%;
+}
+
+/* Utils */
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mobile-hide {
+    display: block;
+}
+
+th.mobile-hide,
+td.mobile-hide {
+    display: table-cell;
+}
+
+tr.mobile-hide {
+    display: table-row;
+}
